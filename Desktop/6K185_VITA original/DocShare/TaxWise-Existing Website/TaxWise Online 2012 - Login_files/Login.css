@@ -1,0 +1,51 @@
+#PageBody {
+	text-align: center; font-size: 10pt; background-color: silver;
+}
+#PageContainer {
+	width: 600px; background-color: white;
+}
+#PageSubcontainer {
+	height: 575px;
+}
+#PageErrorBox {
+	width: 30%; text-align: left; white-space: nowrap;
+}
+#LoginForgotPasswordButton {
+	font-size: 8pt;
+}
+#footer {
+	text-align: center; color: rgb(96, 96, 109); font-size: 8pt; margin-top: 10px;
+}
+#footer a {
+	color: rgb(96, 96, 109); text-decoration: underline;
+}
+#footer a:hover {
+	color: rgb(96, 96, 109); text-decoration: underline;
+}
+.Label {
+	color: rgb(102, 102, 102); font-weight: bold;
+}
+.InputField {
+	width: 175px;
+}
+.FieldErrorIndicator {
+	font-size: 12pt;
+}
+.InputTable td {
+	padding: 2px 3px; border-collapse: collapse;
+}
+.FieldContainer {
+	
+}
+.HeaderImageContainer {
+	padding: 5px;
+}
+.WaterMarkStyle {
+	color: graytext;
+}
+html {
+	margin: 0px; height: 100%; font-family: helvetica;
+}
+body {
+	margin: 0px; height: 100%; font-family: helvetica;
+}

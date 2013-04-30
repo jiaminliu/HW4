@@ -1,0 +1,89 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SLPL </title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrap">
+
+    <div class="logo">
+     South Liberty Public Library
+     </div>
+
+    <div class="mainmenu">
+    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" staticdisplaylevels ="1" orientation="horizontal" >
+
+                                <StaticMenuStyle CssClass="StaticMenu" />
+                                <DynamicHoverStyle cssclass="DynamicHoverStyle" />
+                                <DynamicMenuItemStyle cssclass="DynamicMenuItemStyle" />
+                                <DynamicMenuStyle cssclass="DynamicMenuStyle" />
+                                <DynamicSelectedStyle cssclass="DynamicSelectedStyle" />
+                                <StaticHoverStyle cssclass="StaticHoverStyle"  />
+                                <StaticMenuItemStyle cssclass="StaticMenuItemStyle" />
+                                <StaticSelectedStyle cssclass="StaticSelectedStyle" />
+       </asp:Menu>
+       <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+       <div class="search">
+             
+            <asp:Button ID="SearchButton" runat="server" Text="Search" 
+            PostBackUrl="~/Material/Default.aspx" />
+            <asp:TextBox ID="SourceTB" runat="server" Font-Italic="True"></asp:TextBox>
+            
+            
+        </div>
+    
+        <div class="login">
+     
+         <asp:LoginStatus ID="LoginStatus1" runat="server" />
+        </div>
+    </div>
+      
+      <br clear="all" />
+
+   <div id="leftmenubar">
+        <div class="menu">
+       
+     <asp:Menu ID="Menu2" runat="server" StaticDisplayLevels="3" Orientation="Vertical">
+        <Items>
+        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Hours"/>
+        <asp:MenuItem NavigateUrl="~/Material/Default.aspx" Text="Collection"/>
+        <asp:MenuItem NavigateUrl="~/Application.aspx" Text="Apply"/>
+        </Items>
+     </asp:Menu>
+     
+     </div>
+      
+       
+       
+   </div>
+        <div id="maincontent">
+
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        <div class="search">
+             
+             </div>
+        </asp:ContentPlaceHolder>
+        </div>
+            <div class="footer">
+             University of Iowa, Iowa City, IA 52245
+             Phone:319-335-8827
+             copyright &copy University of Iowa, System And Analysis class, Group3, 2013
+            </div>
+                     
+                     
+        <br clear="all" />
+
+           
+    </div>
+       </form>
+       
+           
+</body>
+</html>

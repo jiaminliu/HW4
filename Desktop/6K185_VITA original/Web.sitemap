@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/default.aspx" title="Home"  description="">
+        <siteMapNode url="~/About.aspx" title="About VITA"  description=""/>
+      <siteMapNode url="~/Coordinator/default.aspx" title="Coordinator"  description="" roles="Coordinator" >
+        <siteMapNode url="~/Coordinator/Alert.aspx" title="Update Weekly Alert"  description="" />
+        <siteMapNode url="~/Coordinator/NewVolunteer.aspx" title="Create a Volunteer"  description="" />
+        <siteMapNode url="~/Account/Register.aspx" title="Register Account"  description="" />
+        <siteMapNode url="~/Coordinator/Volunteer.aspx" title="Manage Volunteers"  description="" />
+      </siteMapNode>
+        <siteMapNode url="~/Volunteer/default.aspx" title="Volunteer"  description="" role="Volunteer">
+          <siteMapNode url="~/Volunteer/TaxMeeting.aspx" title="Manage Tax Meetings"  description="" />
+          <siteMapNode url="~/Volunteer/TaxPayer.aspx" title="Manage Tax Payers"  description="" />
+          <siteMapNode url="~/Volunteer/VolunteerAgreement.aspx" title="Volunteer Agreement"  description="" />
+       
+      </siteMapNode>
+    </siteMapNode>
+  
+        
+
+</siteMap>

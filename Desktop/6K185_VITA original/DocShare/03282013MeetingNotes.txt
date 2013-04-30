@@ -1,0 +1,4 @@
+- No delete button for certification, use edit and attribute.
+- Go through the use stories and assign in iterations.
+- Edit use case to what the scree actually works.
+- Decide if any user story needs pyototype.

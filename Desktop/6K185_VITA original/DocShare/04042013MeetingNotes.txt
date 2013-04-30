@@ -1,0 +1,10 @@
+Tax Meeting: Explain the table		--> DONE
+Marina: Maintain Boat:view logged in users Maintain 
+		      search functionality(using radio button to search by)
+
+Coordinator: Add cusomter.aspx--> log in page & volunteer table --> Waiting till video in SAD
+
+Volunteer Agreemeng: Boolean True/False Sign --> Cannot edit because of dependent dable
+	
+
+			
